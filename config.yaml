@@ -1,0 +1,10 @@
+# refer: https://yaml2go.prasadg.dev/
+global:
+  timeout:
+requests:
+  - url:
+    method:
+  - url:
+    method:
+  - url:
+    method:
