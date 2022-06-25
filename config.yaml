@@ -1,10 +1,21 @@
 # refer: https://yaml2go.prasadg.dev/
 global:
-  timeout:
+  github:
+    owner: 9bow
+    repo: go-healthier
+  timeout: 3 # in sec
 requests:
+  - url: https://discuss.pytorch.kr
+    method: GET
   - url:
     method:
-  - url:
-    method:
-  - url:
-    method:
+  - url: https://tutorials.pytorch.kr
+    method: GET
+notification:
+  github:
+    # NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise by GitHub.
+    assignees:
+      - 9bow
+    labels:
+      - go-healthier
+      - report
